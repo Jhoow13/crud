@@ -1,2 +1,70 @@
-<h1>Cliente</h1>
-<h2>{{titulo}}</h2>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sequenza - Sistema de Cadastro de Clientes</a>
+    </div>
+    <div id="navbar">
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <span>user@sequenza.com.br</span>
+        </div>
+        <button type="submit" class="btn btn-link">Sair</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <span>Clientes Cadastrados</span>
+      <button class="btn btn-success pull-right">Cadastrar Novo Cliente</button>
+    </div>
+  </div>
+  <div class="row row-spacing">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered table-condensed">
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Endereço</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Fulano da Silva</td>
+            <td>fulano@sequenza.com.br</td>
+            <td>Rua Oscar Freire</td>
+            <td>Pinheiros</td>
+            <td>São Paulo</td>
+            <td>Sp</td>
+            <td>(11)91234-5678</td>
+            <td>
+              <span><img class="icons" src="./app/assets/icons/pen.svg" alt="Ícone de caneta para editar"></span>
+              <span><img class="icons" src="./app/assets/icons/trash.svg" alt="Ícone de lixo para excluir"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ciclano de Souza</td>
+            <td>ciclano@sequenza.com.br</td>
+            <td>Rua Paulista</td>
+            <td>Bela Vista</td>
+            <td>São Paulo</td>
+            <td>Sp</td>
+            <td>(11)92345-6789</td>
+            <td>
+              <span><img class="icons" src="./app/assets/icons/pen.svg" alt="Ícone de caneta para editar"></span>
+              <span><img class="icons" src="./app/assets/icons/trash.svg" alt="Ícone de lixo para excluir"></span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
