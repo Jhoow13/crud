@@ -46,7 +46,7 @@
             <td>(11)91234-5678</td>
             <td>
               <span><img class="icons" src="./app/assets/icons/pen.svg" alt="Ícone de caneta para editar"></span>
-              <span><img class="icons" src="./app/assets/icons/trash.svg" alt="Ícone de lixo para excluir"></span>
+              <span ng-click="modalStatus(cliente.id)"><img class="icons" src="./app/assets/icons/trash.svg" alt="Ícone de lixo para excluir"></span>
             </td>
           </tr>
           <tr>
@@ -66,5 +66,13 @@
         </table>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="modalDelete" class="modal-delete">
+  <div class="modal-delete-content text-center">
+    <p>Deseja deletar nome ?</p>
+    <button class="btn btn-danger" ng-click="deletar(id)">Deletar</button>
+    <button class="btn btn-default" ng-click="modalStatus()">Não</button>
   </div>
 </div>

@@ -20,11 +20,6 @@
         controller: 'clienteUpdateController'
       })
 
-      .when('/deletar/:id',{
-        templateUrl: 'app/views/cliente.html',
-        controller: 'clienteDeleteController'
-      })
-
       .otherwise({redirectTo: '/'});
 
 
