@@ -1,0 +1,30 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.6",
+    "angular-aria": "^1.6.6",
+    "angular-material": "^1.1.5",
+    "angular-messages": "^1.6.6",
+    "angular-route": "^1.6.1",
+    "angular-sanitize": "^1.6.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "author": "Joel Silva <joelcsilva@outlook.com>",
+  "license": "MIT"
+}
