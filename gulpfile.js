@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var jshint = require('gulp-jshint');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 var less = require('gulp-less');
@@ -17,7 +16,7 @@ var appFiles = {
         './app/assets/*.less'
     ],
     cssFilesProd:[
-        'node_modules/angular-material/angular-material.min.css'
+        'node_modules/bootstrap/dist/css/bootstrap.css'
     ],
     jsFiles: [
         './app/*.js',
@@ -29,11 +28,6 @@ var appFiles = {
     jsFilesProd:[
         'node_modules/angular/angular.min.js',
         'node_modules/angular-route/angular-route.min.js',
-        'node_modules/angular-sanitize/angular-sanitize.min.js',
-        'node_modules/angular-animate/angular-animate.min.js',
-        'node_modules/angular-aria/angular-aria.min.js',
-        'node_modules/angular-messages/angular-messages.min.js',
-        'node_modules/angular-material/angular-material.min.js'
     ]
 };
 
@@ -45,7 +39,7 @@ gulp.task('clean', function(){
 //** DEV TASKS **//
 gulp.task('js', function(){
     return gulp.src(appFiles.jsFiles)
-    .pipe(concat('index.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest('src/'));
 });
 
