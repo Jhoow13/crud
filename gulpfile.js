@@ -9,6 +9,7 @@ var htmlmin = require('gulp-htmlmin');
 
 var appFiles = {
     htmlfiles:[
+        './index.html',
         './app/views/*.html',
         './app/**/*.html'
     ],
