@@ -9,7 +9,7 @@
         <div class="row">
           <form class="col-md-6" ng-submit="salvar()" novalidate name="cadastroCliente">
             <div class="form-group" ng-class="{ 'has-error': cadastroCliente.nome.$touched && cadastroCliente.nome.$invalid }">
-              <input type="text" id="nome" name="nome" ng-model="cliente.nome" class="form-control" required>
+              <input type="text" id="nome" name="nome" ng-model="cliente.nome" class="form-control" required autocomplete="off">
               <label class="form-control-placeholder" for="nome">Nome</label>
               <div ng-messages="cadastroCliente.nome.$error" ng-if='cadastroCliente.nome.$dirty'>
                 <span ng-message="required" class="error-message">Campo obrigatório</span>
@@ -36,7 +36,7 @@
                 <label class="form-control-placeholder" for="estado">Estado</label>
               </div>
               <div class="form-group">
-                <input type="tel" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required>
+                <input type="text" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required ui-br-phone-number-mask>
                 <label class="form-control-placeholder" for="telefone">Telefone</label>
               </div>
               <div>
@@ -44,6 +44,9 @@
                 <button class="btn btn-default btn-success pull-right" type="submit">Salvar Cliente</button>
               </div>
           </form>
+          <div class="col-md-6">
+            <pre class="code">{{cadastroCliente.telefone | json}}</pre>
+          </div>
         </div>
     </div>
   </div>
