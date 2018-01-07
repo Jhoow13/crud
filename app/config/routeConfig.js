@@ -10,13 +10,13 @@
         controller: 'clienteReadController'
       })
 
-      .when('/cadastro',{
-        templateUrl: 'app/views/cliente.html',
+      .when('/cliente',{
+        templateUrl: 'app/views/cadastro.html',
         controller: 'clienteCreateController'
       })
 
       .when('/cliente/:id',{
-        templateUrl: 'app/views/cliente.html',
+        templateUrl: 'app/views/cadastro.html',
         controller: 'clienteUpdateController'
       })
 
