@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>{{titulo}} cadastro</p>
+    </div>
+  </div>
+  <div class="row row-spacing">
+    <div class="col-md-12">
+        <div class="row">
+          <form class="col-md-6" ng-submit="salvar()" novalidate name="cadastroCliente">
+            <div class="form-group">
+              <input type="text" id="nome" name="nome" ng-model="cliente.nome" class="form-control" required>
+              <label class="form-control-placeholder" for="nome">Nome</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="email" name="email" ng-model="cliente.email" class="form-control" required>
+              <label class="form-control-placeholder" for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="endereco" name="endereco" ng-model="cliente.endereco" class="form-control" required>
+              <label class="form-control-placeholder" for="endereco">Endereco</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="bairro" name="bairro" ng-model="cliente.bairro" class="form-control" required>
+              <label class="form-control-placeholder" for="bairro">Bairro</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="cidade" name="cidade" ng-model="cliente.cidade" class="form-control" required>
+              <label class="form-control-placeholder" for="cidade">Cidade</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="estado" name="estado" ng-model="cliente.estado" class="form-control" required>
+                <label class="form-control-placeholder" for="estado">Estado</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required>
+                <label class="form-control-placeholder" for="telefone">Telefone</label>
+              </div>
+              <div>
+                <button ng-click="voltar()" class="btn btn-default">Voltar</button>
+                <button class="btn btn-default btn-success pull-right" type="submit">Salvar Cliente</button>
+              </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,23 +1,8 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Sequenza - Sistema de Cadastro de Clientes</a>
-    </div>
-    <div id="navbar">
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <span>user@sequenza.com.br</span>
-        </div>
-        <button type="submit" class="btn btn-link">Sair</button>
-      </form>
-    </div>
-  </div>
-</nav>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <span>Clientes Cadastrados</span>
-      <button class="btn btn-success pull-right">Cadastrar Novo Cliente</button>
+      <button ng-click="novoCadastro()" class="btn btn-success pull-right">Cadastrar Novo Cliente</button>
     </div>
   </div>
   <div class="row row-spacing">
@@ -45,7 +30,7 @@
             <td>Sp</td>
             <td>(11)91234-5678</td>
             <td>
-              <span><img class="icons" src="./app/assets/icons/pen.svg" alt="Ícone de caneta para editar"></span>
+              <span ng-click="editarCadastro(1)"><img class="icons" src="./app/assets/icons/pen.svg" alt="Ícone de caneta para editar"></span>
               <span ng-click="modalStatus(cliente.id)"><img class="icons" src="./app/assets/icons/trash.svg" alt="Ícone de lixo para excluir"></span>
             </td>
           </tr>

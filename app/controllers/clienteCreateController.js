@@ -4,7 +4,11 @@
              ['$scope','$location','clienteModel','clienteHttpServices',
       function($scope,$location,clienteModel,clienteHttpServices){
 
-        $scope.titulo = "Create";
+        $scope.titulo = "Novo";
+
+        $scope.voltar = function(){
+          $location.path('/');
+        };
 
       }]);
 })();

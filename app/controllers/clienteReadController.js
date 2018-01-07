@@ -4,7 +4,6 @@
              ['$scope','$location','clienteModel','clienteHttpServices',
       function($scope,$location,clienteModel,clienteHttpServices){
 
-        $scope.titulo = "Read";
         $scope.modalIsOpen = false;
 
         $scope.modalStatus = function(){
@@ -15,11 +14,20 @@
           }else{
             modal.style.display = "none";
           }
-        }
+        };
 
         $scope.closeModal = function(status){
           $scope.modalStatus(status);
-        }
+        };
+
+        $scope.novoCadastro = function(){
+          $location.path('/cliente');
+        };
+
+        $scope.editarCadastro = function(id){
+          console.log(id);
+          $location.path('/cliente/' + id);
+        };
 
 
       }]);

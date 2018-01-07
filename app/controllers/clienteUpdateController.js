@@ -4,8 +4,11 @@
              ['$scope','$location','clienteModel','clienteHttpServices',
       function($scope,$location,clienteModel,clienteHttpServices){
 
-        $scope.titulo = "Update";
+        $scope.titulo = "Editar";
 
+        $scope.voltar = function(){
+          $location.path('/');
+        };
 
       }]);
 })();
