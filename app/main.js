@@ -1,5 +1,5 @@
 (function() {
   'use strict';
-  angular.module('crudCliente', ['ngRoute']);
+  angular.module('crudCliente', ['ngRoute', 'ngMessages']);
 
 })();
