@@ -9,7 +9,8 @@
   "dependencies": {
     "angular": "^1.6.1",
     "angular-route": "^1.6.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.6",
