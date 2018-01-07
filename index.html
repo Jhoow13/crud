@@ -33,8 +33,13 @@
       </div>
     </div>
   </nav>
-
-  <ng-view></ng-view>
+  <div class="text-center" ng-show="carregando">
+    <h5>Carregando, aguarde...</h5>
+    <div class="loader"></div>
+  </div>
+  <div ng-hide="carregando">
+    <ng-view></ng-view>
+  </div>
 </body>
 <footer>
   <p>&copy; Copyright 2018</p>

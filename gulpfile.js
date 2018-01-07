@@ -24,7 +24,8 @@ var appFiles = {
         './app/config/*.js',
         './app/services/**/*.js',
         './app/models/**/*.js',
-        './app/controllers/*.js'
+        './app/controllers/*.js',
+        './app/interceptors/*.js'
     ],
     jsFilesProd:[
         'node_modules/jquery/dist/jquery.min.js',
