@@ -8,12 +8,15 @@
     <div class="col-md-12">
         <div class="row">
           <form class="col-md-6" ng-submit="salvar()" novalidate name="cadastroCliente">
-            <div class="form-group">
+            <div class="form-group" ng-class="{ 'has-error': cadastroCliente.nome.$touched && cadastroCliente.nome.$invalid }">
               <input type="text" id="nome" name="nome" ng-model="cliente.nome" class="form-control" required>
               <label class="form-control-placeholder" for="nome">Nome</label>
+              <div ng-messages="cadastroCliente.nome.$error" ng-if='cadastroCliente.nome.$dirty'>
+                <span ng-message="required" class="error-message">Campo obrigatório</span>
+              </div>
             </div>
             <div class="form-group">
-              <input type="text" id="email" name="email" ng-model="cliente.email" class="form-control" required>
+              <input type="email" id="email" name="email" ng-model="cliente.email" class="form-control" required>
               <label class="form-control-placeholder" for="email">Email</label>
             </div>
             <div class="form-group">
@@ -33,7 +36,7 @@
                 <label class="form-control-placeholder" for="estado">Estado</label>
               </div>
               <div class="form-group">
-                <input type="text" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required>
+                <input type="tel" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required>
                 <label class="form-control-placeholder" for="telefone">Telefone</label>
               </div>
               <div>
