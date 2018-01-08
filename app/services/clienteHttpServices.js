@@ -3,7 +3,8 @@
   angular.module('crudCliente')
       .factory('clienteHttpServices', ['$http', function ($http){
 
-          var clienteUrl = 'http://dev04.sequenza.com.br:9090/swagger/ui/index#/Cliente/';
+          // var clienteUrl = 'http://dev04.sequenza.com.br:9090/swagger/ui/index#/Cliente/';
+          var clienteUrl = '../../clientes.json';
 
           var _clienteCreateHttp = function(){
             return $http({
@@ -12,7 +13,7 @@
             });
           };
 
-          var _clienteReadHttp = function(){
+          var _clientesReadHttp = function(){
             return $http({
                 method: 'GET',
                 url: clienteUrl
@@ -35,7 +36,7 @@
 
           return {
               clienteCreateService: _clienteCreateHttp,
-              clienteReadService: _clienteReadHttp,
+              clientesReadService: _clientesReadHttp,
               clienteUpdateService: _clienteUpdateHttp,
               clienteDeleteService: _clienteDeleteHttp
           };

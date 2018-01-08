@@ -6,14 +6,31 @@
 
         $scope.modalIsOpen = false;
 
-        $scope.modalStatus = function(){
+
+        clienteHttpServices.clientesReadService().then(function(response){
+          $scope.clientes = response.data;
+        });
+
+        $scope.modalStatus = function(id,nome){
+
           $scope.modalIsOpen = !$scope.modalIsOpen;
           var modal = document.getElementById("modalDelete");
+
           if($scope.modalIsOpen){
             modal.style.display = "block";
           }else{
             modal.style.display = "none";
           }
+
+          $scope.objCliente = {
+            id: id,
+            nome: nome,
+            deletar: function(){
+              alert('Cliente: ' + nome +' deletado');
+              modal.style.display = "none";
+            }
+          }
+
         };
 
         $scope.closeModal = function(status){
@@ -25,10 +42,8 @@
         };
 
         $scope.editarCadastro = function(id){
-          console.log(id);
           $location.path('/cliente/' + id);
         };
-
 
       }]);
 })();

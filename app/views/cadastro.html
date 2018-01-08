@@ -36,7 +36,7 @@
                 <label class="form-control-placeholder" for="estado">Estado</label>
               </div>
               <div class="form-group">
-                <input type="text" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required ui-br-phone-number-mask>
+                <input type="tel" id="telefone" name="telefone" ng-model="cliente.telefone" class="form-control" required ui-br-phone-number-mask>
                 <label class="form-control-placeholder" for="telefone">Telefone</label>
               </div>
               <div>
@@ -44,9 +44,6 @@
                 <button class="btn btn-default btn-success pull-right" type="submit">Salvar Cliente</button>
               </div>
           </form>
-          <div class="col-md-6">
-            <pre class="code">{{cadastroCliente.telefone | json}}</pre>
-          </div>
         </div>
     </div>
   </div>
