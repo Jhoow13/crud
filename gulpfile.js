@@ -9,29 +9,31 @@ var htmlmin = require('gulp-htmlmin');
 
 var appFiles = {
     htmlfiles:[
-        './index.html',
-        './app/views/*.html',
-        './app/**/*.html'
+      './index.html',
+      './app/views/*.html',
+      './app/**/*.html'
     ],
     cssFiles:[
-        './app/assets/*.less'
+      './app/assets/*.less'
     ],
     cssFilesProd:[
-        'node_modules/bootstrap/dist/css/bootstrap.css'
+      'node_modules/bootstrap/dist/css/bootstrap.css'
     ],
     jsFiles: [
-        './app/*.js',
-        './app/config/*.js',
-        './app/services/**/*.js',
-        './app/models/**/*.js',
-        './app/controllers/*.js',
-        './app/interceptors/*.js'
+      './app/*.js',
+      './app/config/*.js',
+      './app/services/**/*.js',
+      './app/models/**/*.js',
+      './app/controllers/*.js',
+      './app/interceptors/*.js'
     ],
     jsFilesProd:[
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js',
-        'node_modules/angular/angular.min.js',
-        'node_modules/angular-route/angular-route.min.js'
+      'node_modules/angular/angular.min.js',
+      'node_modules/angular-route/angular-route.min.js',
+      'node_modules/angular-messages/angular-messages.min.js',
+      'node_modules/angular-input-masks/releases/angular-input-masks-standalone.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/bootstrap/dist/js/bootstrap.min.js'
     ]
 };
 
