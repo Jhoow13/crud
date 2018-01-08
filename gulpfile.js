@@ -97,7 +97,7 @@ gulp.task('reload', function(done){
     done();
 });
 
-gulp.task('serve', ['less', 'js'], function(){
+gulp.task('serve', ['build'], function(){
   browserSync.init({
     server: {
         baseDir: "./"

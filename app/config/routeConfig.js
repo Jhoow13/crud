@@ -6,17 +6,17 @@
 
       $routeProvider
       .when('/', {
-        templateUrl: 'app/views/cliente.html',
+        templateUrl: 'src/html/cliente.html',
         controller: 'clienteReadController'
       })
 
       .when('/cliente',{
-        templateUrl: 'app/views/cadastro.html',
+        templateUrl: 'src/html/cadastro.html',
         controller: 'clienteCreateController'
       })
 
       .when('/cliente/:id',{
-        templateUrl: 'app/views/cadastro.html',
+        templateUrl: 'src/html/cadastro.html',
         controller: 'clienteUpdateController'
       })
 
