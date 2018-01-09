@@ -4,7 +4,7 @@
       .factory('clienteHttpServices', ['$http', function ($http){
 
           // var clienteUrl = 'http://dev04.sequenza.com.br:9090/swagger/ui/index#/Cliente/';
-          var clienteUrl = '../../clientes.json';
+          var clienteUrl = '../assets/clientes.json';
 
           var _clienteCreateHttp = function(){
             return $http({
