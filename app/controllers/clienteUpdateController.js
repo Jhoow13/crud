@@ -8,9 +8,6 @@
         $scope.titulo = "Editar";
 
         clienteHttpServices.clientesReadService().then(function(response){
-          //usar filter para pegar registro igual ao id
-          //tu é burro e ta pegando a posição do array seu animal
-
           var clientes = response.data;
           $scope.cliente = clientes.find(function(itemCliente){
             return itemCliente.id == idParam;
