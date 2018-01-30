@@ -2,7 +2,7 @@
   {
     "id": "1",
     "nome": "Fulano da Silva",
-    "email": "fulano@sequenza.com.br",
+    "email": "fulano@email.com.br",
     "endereco": "Rua Oscar Freire, 125",
     "bairro": "Pinheiros",
     "cidade": "São Paulo",
@@ -12,7 +12,7 @@
   {
     "id": "2",
     "nome": "Ciclano de Souza",
-    "email": "ciclano@sequenza.com.br",
+    "email": "ciclano@email.com.br",
     "endereco": "Rua Teodoro Sampaio, 15",
     "bairro": "Pinheiros",
     "cidade": "São Paulo",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "nome": "Beltrano de Almeida",
-    "email": "beltrano@sequenza.com.br",
+    "email": "beltrano@email.com.br",
     "endereco": "Rua Treze de Maio, 89",
     "bairro": "Centro",
     "cidade": "São Paulo",
